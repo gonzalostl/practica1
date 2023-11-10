@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+  </head>
+  <body>
+    <h1>Registro</h1>
+
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input placeholder="" id="first_name" type="text" class="validate" />
+            <label for="first_name">Nombre</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate" />
+            <label for="last_name">Apellidos</label>
+          </div>
+        </div>
+
+        <label for="rango">Edad:</label>
+        <input type="range" id="rango" name="rango" min="0" max="100" value="50" />
+
+        <br />
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" />
+
+        <br />
+
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero">
+          <option value="masculino">Masculino</option>
+          <option value="femenino">Femenino</option>
+          <option value="otro">Otro</option>
+        </select>
+
+        <br />
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+  </body>
+</html>
